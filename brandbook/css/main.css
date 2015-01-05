@@ -1,0 +1,1280 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, ../dev/sass/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, ../dev/sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 32, ../dev/sass/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 52, ../dev/sass/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../dev/sass/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 75, ../dev/sass/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../dev/sass/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 95, ../dev/sass/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 107, ../dev/sass/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 115, ../dev/sass/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 124, ../dev/sass/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 133, ../dev/sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../dev/sass/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../dev/sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 159, ../dev/sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../dev/sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../dev/sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 182, ../dev/sass/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 190, ../dev/sass/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 201, ../dev/sass/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../dev/sass/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../dev/sass/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 227, ../dev/sass/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 250, ../dev/sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 264, ../dev/sass/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 275, ../dev/sass/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 288, ../dev/sass/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 300, ../dev/sass/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 309, ../dev/sass/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../dev/sass/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 332, ../dev/sass/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 344, ../dev/sass/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../dev/sass/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 368, ../dev/sass/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../dev/sass/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../dev/sass/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 397, ../dev/sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../dev/sass/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../dev/sass/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 422, ../dev/sass/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*
+ * HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* line 13, ../dev/sass/_h5b.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+/* line 21, ../dev/sass/_h5b.scss */
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 32, ../dev/sass/_h5b.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* line 37, ../dev/sass/_h5b.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 46, ../dev/sass/_h5b.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+/* line 60, ../dev/sass/_h5b.scss */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 71, ../dev/sass/_h5b.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 81, ../dev/sass/_h5b.scss */
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+/* line 89, ../dev/sass/_h5b.scss */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+### `.g-ir`
+
+Add the `.g-ir` class to any element you are applying image-replacement to. When
+replacing an element's content with an image, make sure to also set a specific
+`background-image: url(pathtoimage.png);`, `width`, and `height` so that your
+replacement image appears.
+
+#### `.g-hidden`
+
+Add the `.g-hidden` class to any elements that you want to hide from all
+presentations, including screen readers. It could be an element that will be
+populated later with JavaScript or an element you will hide with JavaScript. Do
+not use this for SEO keyword stuffing. That is just not cool.
+
+#### `.g-visuallyhidden`
+
+Add the `.g-visuallyhidden` class to hide text from browsers but make it
+available for screen readers. You can use this to hide text that is specific to
+screen readers but that other users should not see. [About invisible
+content](http://www.webaim.org/techniques/css/invisiblecontent/), [Hiding content for
+accessibility](http://snook.ca/archives/html_and_css/hiding-content-for-accessibility),
+[HTML5 Boilerplate issue/research](https://github.com/h5bp/html5-boilerplate/issues/194/).
+
+#### `.g-invisible`
+
+Add the `.g-invisible` class to any element you want to hide without affecting
+layout. When you use `display: none` an element is effectively removed from the
+layout. But in some cases you want the element to simply be invisible while
+remaining in the flow and not affecting the positioning of surrounding content.
+
+#### `.g-clearfix`
+
+Adding `.g-clearfix` to an element will ensure that it always fully contains its
+floated children. There have been many variants of the clearfix hack over the
+years, and there are other hacks that can also help you to contain floated
+children, but the HTML5 Boilerplate currently uses the [micro clearfix]
+(http://nicolasgallagher.com/micro-clearfix-hack/). */
+/*
+ * Image replacement
+ */
+/* line 142, ../dev/sass/_h5b.scss */
+.g-ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+/* line 150, ../dev/sass/_h5b.scss */
+.g-ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 161, ../dev/sass/_h5b.scss */
+.g-hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 170, ../dev/sass/_h5b.scss */
+.g-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 186, ../dev/sass/_h5b.scss */
+.g-visuallyhidden.focusable:active,
+.g-visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 200, ../dev/sass/_h5b.scss */
+.g-invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 216, ../dev/sass/_h5b.scss */
+.g-clearfix:before,
+.g-clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+/* line 222, ../dev/sass/_h5b.scss */
+.g-clearfix:after {
+  clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 231, ../dev/sass/_h5b.scss */
+.g-clearfix {
+  *zoom: 1;
+}
+
+/**
+* @section Variables
+*/
+/**
+* @section Gradients 
+*
+* %gradient1 {…}
+* %gradient2 {…}
+*/
+/* line 36, ../dev/sass/main.scss */
+.g-tel {
+  color: inherit;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* ==|== primary styles =====================================================
+   Authors: %Author Name%
+   ========================================================================== */
+/**
+* @section Fonts
+*
+* @include font-face($name, $file, $weight: normal, $style: normal);
+* @include font-face('PTSans', 'PTSansRegular-webfont');
+* @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
+* @include font-face('PTSans', 'PTSansBold-webfont', bold);
+*/
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue_thin-webfont.eot");
+  src: url("../fonts/bebasneue_thin-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue_thin-webfont.woff") format("woff"), url("../fonts/bebasneue_thin-webfont.ttf") format("truetype"), url("../fonts/bebasneue_thin-webfont.svg") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue_light-webfont.eot");
+  src: url("../fonts/bebasneue_light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue_light-webfont.woff") format("woff"), url("../fonts/bebasneue_light-webfont.ttf") format("truetype"), url("../fonts/bebasneue_light-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue_regular-webfont.eot");
+  src: url("../fonts/bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue_regular-webfont.woff") format("woff"), url("../fonts/bebasneue_regular-webfont.ttf") format("truetype"), url("../fonts/bebasneue_regular-webfont.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue_book-webfont.eot");
+  src: url("../fonts/bebasneue_book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue_book-webfont.woff") format("woff"), url("../fonts/bebasneue_book-webfont.ttf") format("truetype"), url("../fonts/bebasneue_book-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/bebasneue_bold-webfont.eot");
+  src: url("../fonts/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bebasneue_bold-webfont.woff") format("woff"), url("../fonts/bebasneue_bold-webfont.ttf") format("truetype"), url("../fonts/bebasneue_bold-webfont.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+/* line 56, ../dev/sass/main.scss */
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+/* line 57, ../dev/sass/main.scss */
+a:hover, a:active {
+  text-decoration: none;
+}
+/* line 58, ../dev/sass/main.scss */
+a:focus {
+  outline: none;
+}
+/* line 60, ../dev/sass/main.scss */
+a[href^="tel"], a[href^="mailto"] {
+  color: #fa4646;
+  text-decoration: none;
+}
+/* line 61, ../dev/sass/main.scss */
+a[href^="tel"]:hover, a[href^="mailto"]:hover {
+  text-decoration: underline;
+}
+
+/* line 64, ../dev/sass/main.scss */
+p {
+  margin: 18px 0;
+}
+
+/* line 65, ../dev/sass/main.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 68, ../dev/sass/main.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font: 400 14px/1.5 "Roboto", sans-serif;
+  color: #000;
+}
+
+/**
+* @section Style Guide
+*/
+/* line 74, ../dev/sass/main.scss */
+.g-wrapper {
+  width: 1280px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 145px;
+}
+
+/* line 76, ../dev/sass/main.scss */
+.l-sgWrapper {
+  min-width: 1280px;
+}
+
+/* line 81, ../dev/sass/main.scss */
+.b-sgLogo {
+  margin: 0;
+  padding: 40px 0 45px;
+  text-align: center;
+}
+
+/* line 83, ../dev/sass/main.scss */
+.b-sgLogo__icon {
+  width: 229px;
+  height: 83px;
+}
+
+/* line 89, ../dev/sass/main.scss */
+.b-sgSection__block {
+  padding-bottom: 40px;
+}
+
+/* line 90, ../dev/sass/main.scss */
+.b-sgSection__info {
+  position: relative;
+  padding: 30px 0;
+  font-family: "Roboto Slab", serif;
+  color: #bfbfbf;
+}
+/* line 91, ../dev/sass/main.scss */
+.b-sgSection__info:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 150px;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+/* line 93, ../dev/sass/main.scss */
+.b-sgSection__block:first-child .b-sgSection__info:before {
+  width: 100%;
+}
+
+/* line 96, ../dev/sass/main.scss */
+.b-sgSection__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* line 97, ../dev/sass/main.scss */
+.b-sgSection__subtitle {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* line 98, ../dev/sass/main.scss */
+.b-sgSection__description {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* line 99, ../dev/sass/main.scss */
+.b-sgSection__inner {
+  position: relative;
+}
+/* line 100, ../dev/sass/main.scss */
+.b-sgSection__inner.-type_1 {
+  padding-top: 40px;
+}
+/* line 101, ../dev/sass/main.scss */
+.b-sgSection__inner.-type_1:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+/* line 103, ../dev/sass/main.scss */
+.b-sgSection__inner.-type_1 .b-title {
+  display: inline-block;
+  margin: 0;
+}
+/* line 104, ../dev/sass/main.scss */
+.b-sgSection__inner.-type_1 p {
+  margin: 0;
+}
+
+/* line 107, ../dev/sass/main.scss */
+.b-sgSection__container {
+  padding: 40px 0;
+}
+
+/* line 110, ../dev/sass/main.scss */
+.b-sgSection__item {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 40px;
+}
+/* line 111, ../dev/sass/main.scss */
+.b-sgSection__item:before {
+  content: attr(data-type);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  color: #bfbfbf;
+  vertical-align: baseline;
+}
+/* line 113, ../dev/sass/main.scss */
+.b-sgSection__item:first-child {
+  margin-top: 0;
+}
+
+/* line 116, ../dev/sass/main.scss */
+.-sgFont_robotoSlab {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+}
+
+/* line 117, ../dev/sass/main.scss */
+.-sgFont_roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+/* line 118, ../dev/sass/main.scss */
+.-sgFont_bebas {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+}
+
+/* line 120, ../dev/sass/main.scss */
+.-sgBg_red {
+  background-color: #fa4646;
+}
+
+/* line 121, ../dev/sass/main.scss */
+.-sgBg_gray {
+  background-color: #26282e;
+}
+
+/* line 123, ../dev/sass/main.scss */
+.b-sgList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 127, ../dev/sass/main.scss */
+.b-sgList.-type_1 .b-sgList__item {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* line 130, ../dev/sass/main.scss */
+.l-sgFooter {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+/* line 131, ../dev/sass/main.scss */
+.l-sgCopyright {
+  font-style: normal;
+}
+
+/**
+* @section Typography : Headers
+*/
+/* line 139, ../dev/sass/main.scss */
+.b-title {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* line 141, ../dev/sass/main.scss */
+.b-h1 {
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+
+/* line 142, ../dev/sass/main.scss */
+.b-h2 {
+  font-size: 48px;
+  margin-bottom: 48px;
+}
+
+/* line 143, ../dev/sass/main.scss */
+.b-h3 {
+  font-size: 36px;
+  margin-bottom: 36px;
+}
+
+/* line 144, ../dev/sass/main.scss */
+.b-h4 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* line 145, ../dev/sass/main.scss */
+.b-h5 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+/* line 146, ../dev/sass/main.scss */
+.b-h6 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 147, ../dev/sass/main.scss */
+.b-h7 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/**
+* @section Typography : Text
+*/
+/* line 153, ../dev/sass/main.scss */
+.b-p1 {
+  font: 400 28px "Roboto", sans-serif;
+}
+
+/* line 154, ../dev/sass/main.scss */
+.b-p2 {
+  font: 400 18px "Roboto", sans-serif;
+}
+
+/* line 155, ../dev/sass/main.scss */
+.b-p3 {
+  font: 700 16px/1.7 "Roboto Slab", serif;
+  color: #36383d;
+}
+
+/* line 156, ../dev/sass/main.scss */
+.b-p4 {
+  font: 300 14px/1.7 "Roboto Slab", serif;
+}
+
+/* line 157, ../dev/sass/main.scss */
+.b-p5 {
+  font: 400 14px/1.7 "Roboto Slab", serif;
+}
+
+/* line 159, ../dev/sass/main.scss */
+.-column_2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  text-align: justify;
+}
+
+/* line 160, ../dev/sass/main.scss */
+.-column_3 {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 70px;
+  -moz-column-gap: 70px;
+  column-gap: 70px;
+  text-align: justify;
+}
+
+/* line 162, ../dev/sass/main.scss */
+.b-list {
+  margin: 16px 0;
+  padding: 0 0 0 38px;
+  list-style: outside;
+}
+/* line 163, ../dev/sass/main.scss */
+.b-list.-type_1 {
+  list-style-type: decimal;
+}
+/* line 164, ../dev/sass/main.scss */
+.b-list.-type_2 {
+  list-style-type: disc;
+}
+/* line 165, ../dev/sass/main.scss */
+.b-list.-type_3 {
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJBAMAAADjtECuAAAAMFBMVEX///87Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsvtLGgAAAAD3RSTlMACg8WIW15gJKYs8PI0dxv8sbLAAAAI0lEQVQI12PIEmBg6N/EwMD+14CBIf4JAwPnHzAN4oPEgfIAqGIJaoUDtjQAAAAASUVORK5CYII=");
+}
+/* line 166, ../dev/sass/main.scss */
+.b-list.-type_4 {
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJBAMAAADjtECuAAAAMFBMVEX////6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6RkagqI21AAAAD3RSTlMACg8WIW15gJKYs8PI0dxv8sbLAAAAI0lEQVQI12PIEmBg6N/EwMD+14CBIf4JAwPnHzAN4oPEgfIAqGIJaoUDtjQAAAAASUVORK5CYII=");
+  color: #fa4646;
+}
+/* line 168, ../dev/sass/main.scss */
+.b-list li {
+  padding-left: 6px;
+}
+
+/**
+* @section Typography : Quotes
+*/
+/* line 175, ../dev/sass/main.scss */
+.b-comments {
+  overflow: hidden;
+}
+
+/* line 176, ../dev/sass/main.scss */
+.b-comment {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 15px 30px 15px 65px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAA1klEQVR42mL8//8/AzI4cOAAI4h2cHBAlUCTZwRpBHJEgOwJQBwCxOxQNYVAzROgipWA1BQgdgdiJpAYC1CQFUjvAWJ9HDaADD0ExNLI4ixAnICm6RtU4TUovxRN0weQPEhjMJLgJSB2BTrxFZJYCBIb5LIgoPxnJjTb6pA1AZ0pAKSUkOSLQJoYoB6VQJK4geZFYTT+VWQ/IgNboC2SQPoB0OQHQJoXTd4OKA+irzChScwG4v3QAMMG9kOxDRMDmWAkaARFBzMW8f/QHHIBGPxY5QECDADR90ENR8nhAgAAAABJRU5ErkJggg==");
+  background-position: 40px 19px;
+  background-repeat: no-repeat;
+  font: 400 14px/1.7 "Roboto Slab", serif;
+  color: #000;
+}
+
+/* line 178, ../dev/sass/main.scss */
+.b-comment__author {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: right;
+}
+
+/**
+* @section Typography : Links
+*/
+/* line 184, ../dev/sass/main.scss */
+.b-link {
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+/* line 185, ../dev/sass/main.scss */
+.b-link.-type_1 {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* line 186, ../dev/sass/main.scss */
+.b-link.-type_1:hover {
+  text-decoration: none;
+}
+/* line 188, ../dev/sass/main.scss */
+.b-link.-type_2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 189, ../dev/sass/main.scss */
+.b-link.-type_3 {
+  font-size: 16px;
+  text-decoration: underline;
+}
+/* line 190, ../dev/sass/main.scss */
+.b-link.-type_3:hover {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Queries for Desktop Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* line 203, ../dev/sass/main.scss */
+.-device_desktop .g-tel {
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   Queries for Tablet Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* ==========================================================================
+   Queries for Mobile Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 480px) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 7, ../dev/sass/_print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    -webkit-box-shadow: none !important;
+    /* Black prints faster: h5bp.com/s */
+    -moz-box-shadow: none !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 14, ../dev/sass/_print.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 19, ../dev/sass/_print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 23, ../dev/sass/_print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 31, ../dev/sass/_print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 37, ../dev/sass/_print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 43, ../dev/sass/_print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 47, ../dev/sass/_print.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 52, ../dev/sass/_print.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  /* line 60, ../dev/sass/_print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 67, ../dev/sass/_print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

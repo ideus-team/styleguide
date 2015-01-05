@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+@import 'normalize';
+@import 'h5b';
+@import 'compass/css3/images';
+@import 'mixins';
+@import 'base64';
+
+
+/**
+* @section Variables
+*/
+$fontArial: Arial, Helvetica, sans-serif;
+
+$fontRoboto: 'Roboto', sans-serif;
+$fontRobotoSlab: 'Roboto Slab', serif;
+$fontBebas: 'Bebas Neue', sans-serif;
+
+$siteWidth: 1280px;
+
+$colorRed: #fa4646;
+$colorBtn_normal: #e54241;
+$colorBtn_hover: #d8302f;
+
+$colorGray1: #26282e;
+$colorGray2: #222429;
+
+
+/**
+* @section Gradients 
+*
+* %gradient1 {…}
+* %gradient2 {…}
+*/
+
+.g-tel {color: inherit; text-decoration: none; cursor: default;}
+
+/* ==|== primary styles =====================================================
+   Authors: %Author Name%
+   ========================================================================== */
+
+/**
+* @section Fonts
+*
+* @include font-face($name, $file, $weight: normal, $style: normal);
+* @include font-face('PTSans', 'PTSansRegular-webfont');
+* @include font-face('PTSans', 'PTSansItalic-webfont', normal, italic);
+* @include font-face('PTSans', 'PTSansBold-webfont', bold);
+*/
+@include font-face('Bebas Neue', 'bebasneue_thin-webfont', 100);
+@include font-face('Bebas Neue', 'bebasneue_light-webfont', 300);
+@include font-face('Bebas Neue', 'bebasneue_regular-webfont', 400);
+@include font-face('Bebas Neue', 'bebasneue_book-webfont', 500);
+@include font-face('Bebas Neue', 'bebasneue_bold-webfont', 700);
+
+a {text-decoration: underline; color: inherit;
+  &:hover, &:active {text-decoration: none;}
+  &:focus {outline: none;}
+  
+  &[href^="tel"], &[href^="mailto"] {color: $colorRed; text-decoration: none;
+    &:hover {text-decoration: underline;}
+  }
+}
+p {margin: 18px 0;}
+strong {font-weight: 700;}
+
+html {}
+body {margin: 0; padding: 0; background: #fff; font: 400 14px/1.5 $fontRoboto; color: #000;}
+
+
+/**
+* @section Style Guide
+*/
+.g-wrapper {width: $siteWidth; box-sizing: border-box; margin: 0 auto; padding: 0 145px;}
+
+.l-sgWrapper {min-width: $siteWidth;}
+
+.l-sgHeader {}
+
+.l-sgLogo {}
+.b-sgLogo {margin: 0; padding: 40px 0 45px; text-align: center;}
+.b-sgLogo__link {}
+.b-sgLogo__icon {width: 229px; height: 83px;}
+
+.l-sgContent {}
+.b-sgContent {}
+
+.b-sgSection {}
+.b-sgSection__block {padding-bottom: 40px;}
+.b-sgSection__info {position: relative; padding: 30px 0; font-family: $fontRobotoSlab; color: #bfbfbf;
+  &:before {content: ''; position: absolute; top: 0; left: 0; display: block; width: 150px; height: 1px; background-color: #e1e1e1;}
+  .b-sgSection__block:first-child & {
+    &:before {width: 100%;}
+  }
+}
+.b-sgSection__title {font-size: 24px; font-weight: 700;}
+.b-sgSection__subtitle {font-size: 24px; font-weight: 300;}
+.b-sgSection__description {font-size: 20px; font-weight: 300;}
+.b-sgSection__inner {position: relative;
+  &.-type_1 {padding-top: 40px;
+    &:before {content: ''; position: absolute; top: 0; left: 0; width: 50px; height: 1px; background-color: #e1e1e1;}
+    
+    .b-title {display: inline-block; margin: 0;}
+    p {margin: 0;}
+  }
+}
+.b-sgSection__container {padding: 40px 0;}
+
+.b-sgSection__list {}
+.b-sgSection__item {position: relative; margin-top: 40px; padding-left: 40px;
+  &:before {content: attr(data-type); position: absolute; top: 0; left: 0; font-size: 14px; font-weight: 400; font-family: $fontRobotoSlab; color: #bfbfbf; vertical-align: baseline;}
+  
+  &:first-child {margin-top: 0;}
+}
+
+.-sgFont_robotoSlab {font-family: $fontRobotoSlab; font-weight: 400;}
+.-sgFont_roboto {font-family: $fontRoboto; font-weight: 400;}
+.-sgFont_bebas {font-family: $fontBebas; font-weight: 400;}
+
+.-sgBg_red {background-color: $colorRed;}
+.-sgBg_gray {background-color: $colorGray1;}
+
+.b-sgList {margin: 0; padding: 0; list-style: none;
+  &.-type_1 {}
+}
+.b-sgList__item {
+  .b-sgList.-type_1 & {display: inline-block; margin-right: 30px;}
+}
+
+.l-sgFooter {padding-top: 25px; padding-bottom: 25px; text-align: center;}
+.l-sgCopyright {font-style: normal;}
+
+
+
+
+/**
+* @section Typography : Headers
+*/
+.b-title {font-family: $fontBebas; line-height: 1; text-transform: uppercase;}
+
+.b-h1 {font-size: 60px; margin-bottom: 60px;}
+.b-h2 {font-size: 48px; margin-bottom: 48px;}
+.b-h3 {font-size: 36px; margin-bottom: 36px;}
+.b-h4 {font-size: 30px; margin-bottom: 30px;}
+.b-h5 {font-size: 24px; margin-bottom: 24px;}
+.b-h6 {font-size: 20px; margin-bottom: 20px;}
+.b-h7 {font-size: 16px; margin-bottom: 16px;}
+
+
+/**
+* @section Typography : Text
+*/
+.b-p1 {font: 400 28px $fontRoboto;}
+.b-p2 {font: 400 18px $fontRoboto;}
+.b-p3 {font: 700 16px/1.7 $fontRobotoSlab; color: #36383d;}
+.b-p4 {font: 300 14px/1.7 $fontRobotoSlab;}
+.b-p5 {font: 400 14px/1.7 $fontRobotoSlab;}
+
+.-column_2 {column-count: 2; column-gap: 40px; text-align: justify;}
+.-column_3 {column-count: 3;	column-gap: 70px; text-align: justify;}
+
+.b-list {margin: 16px 0; padding: 0 0 0 38px; list-style: outside;
+  &.-type_1 {list-style-type: decimal;}
+  &.-type_2 {list-style-type: disc;}
+  &.-type_3 {list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJBAMAAADjtECuAAAAMFBMVEX///87Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsvtLGgAAAAD3RSTlMACg8WIW15gJKYs8PI0dxv8sbLAAAAI0lEQVQI12PIEmBg6N/EwMD+14CBIf4JAwPnHzAN4oPEgfIAqGIJaoUDtjQAAAAASUVORK5CYII=");}
+  &.-type_4 {list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJBAMAAADjtECuAAAAMFBMVEX////6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6Rkb6RkagqI21AAAAD3RSTlMACg8WIW15gJKYs8PI0dxv8sbLAAAAI0lEQVQI12PIEmBg6N/EwMD+14CBIf4JAwPnHzAN4oPEgfIAqGIJaoUDtjQAAAAASUVORK5CYII="); color: $colorRed;}
+  
+  & li {padding-left: 6px;}
+}
+
+
+/**
+* @section Typography : Quotes
+*/
+.b-comments {overflow: hidden;}
+.b-comment {float: left; width: 50%; margin: 0; padding: 15px 30px 15px 65px; box-sizing: border-box; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAA1klEQVR42mL8//8/AzI4cOAAI4h2cHBAlUCTZwRpBHJEgOwJQBwCxOxQNYVAzROgipWA1BQgdgdiJpAYC1CQFUjvAWJ9HDaADD0ExNLI4ixAnICm6RtU4TUovxRN0weQPEhjMJLgJSB2BTrxFZJYCBIb5LIgoPxnJjTb6pA1AZ0pAKSUkOSLQJoYoB6VQJK4geZFYTT+VWQ/IgNboC2SQPoB0OQHQJoXTd4OKA+irzChScwG4v3QAMMG9kOxDRMDmWAkaARFBzMW8f/QHHIBGPxY5QECDADR90ENR8nhAgAAAABJRU5ErkJggg=="); background-position: 40px 19px; background-repeat: no-repeat; font: 400 14px/1.7 $fontRobotoSlab; color: #000;}
+.b-comment__text {}
+.b-comment__author {margin-top: 20px; font-weight: 700; text-align: right;}
+
+
+/**
+* @section Typography : Links
+*/
+.b-link {font-weight: 700; font-family: $fontRobotoSlab;
+  &.-type_1 {font-size: 14px; text-transform: uppercase; text-decoration: underline;
+    &:hover {text-decoration: none;}
+  }
+  &.-type_2 {font-size: 12px; text-transform: uppercase; text-decoration: none;}
+  &.-type_3 {font-size: 16px; text-decoration: underline;
+    &:hover {text-decoration: none;}
+  }
+}
+
+
+
+/* ==========================================================================
+   Queries for Desktop Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_desktop {
+  .g-tel {pointer-events: none;}
+}
+
+
+/* ==========================================================================
+   Queries for Tablet Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_tablet {}
+
+
+/* ==========================================================================
+   Queries for Mobile Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+.-device_mobile {}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('wide screen') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 480px) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+     (-o-min-device-pixel-ratio: 5/4),
+     (-webkit-min-device-pixel-ratio: 1.25),
+     (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+@import 'print';
